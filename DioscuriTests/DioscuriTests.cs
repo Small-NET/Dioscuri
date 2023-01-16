@@ -13,7 +13,7 @@ namespace DioscuriTests
             var browserEngine = new BrowserEngine(certificate);
 
             // Act
-            var response = browserEngine.RetrieveResponseFromUrl(string.Empty);
+            var response = browserEngine.DownloadContent(string.Empty);
 
             // Assert
             Assert.IsFalse(string.IsNullOrEmpty(response));

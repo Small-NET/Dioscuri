@@ -8,7 +8,8 @@ namespace Dioscuri
         {
             var cert = Certificates.CreateX509Certificate2("dioscuri.browser");
 
-            IBrowserEngine browserEngine = new BrowserEngine(cert);
+            IParser parser = new Parser();
+            IBrowserEngine browserEngine = new BrowserEngine(cert, parser);
 
             var client = new Client(browserEngine);
 

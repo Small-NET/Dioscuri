@@ -2,6 +2,6 @@
 {
     public interface IBrowserEngine
     {
-        public string RetrieveResponseFromUrl(string url);
+        public string DownloadContent(string url);
     }
 }
