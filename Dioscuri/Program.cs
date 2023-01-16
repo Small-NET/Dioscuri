@@ -1,10 +1,14 @@
-﻿namespace Dioscuri
+﻿using Dioscuri.Core;
+
+namespace Dioscuri
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            var client = new Client();
+            var cert = CreateCert.GenerateSelfSignedCertificate();
+            var browserEngine = new BrowserEngine(cert);
+            var client = new Client(browserEngine);
 
             client.StartClient();
         }
