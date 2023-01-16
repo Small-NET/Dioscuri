@@ -5,9 +5,9 @@ namespace Dioscuri
 {
     public class Client
     {
-        private readonly BrowserEngine _browserEngine;
+        private readonly IBrowserEngine _browserEngine;
 
-        public Client(BrowserEngine browserEngine)
+        public Client(IBrowserEngine browserEngine)
         {
             _browserEngine = browserEngine;
         }
@@ -57,7 +57,7 @@ namespace Dioscuri
                 Y = 3,
                 Width = Dim.Fill(),
                 Height = Dim.Fill(),
-                CanFocus = false,
+                CanFocus = true,
             };
 
             mainWindow.Add(browserFrame);

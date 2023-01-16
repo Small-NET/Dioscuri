@@ -3,7 +3,7 @@ using SmolNetSharp.Protocols;
 
 namespace Dioscuri.Core
 {
-    public class BrowserEngine
+    public class BrowserEngine : IBrowserEngine
     {
         private readonly X509Certificate2 _certificate;
 

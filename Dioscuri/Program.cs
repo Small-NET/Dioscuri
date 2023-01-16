@@ -6,8 +6,10 @@ namespace Dioscuri
     {
         static void Main(string[] args)
         {
-            var cert = Certificates.CreateX509Certificate2("Dioscuri Browser");
-            var browserEngine = new BrowserEngine(cert);
+            var cert = Certificates.CreateX509Certificate2("dioscuri.browser");
+
+            IBrowserEngine browserEngine = new BrowserEngine(cert);
+
             var client = new Client(browserEngine);
 
             client.StartClient();
