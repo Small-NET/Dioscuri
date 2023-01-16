@@ -101,7 +101,7 @@ namespace Dioscuri
             urlButton.Clicked += () =>
             {
                 // Make request using input from urlField
-                var pageContent = _browserEngine.RetrieveResponseFromUrl(urlField.Text.ToString() ?? "gemini://gemini.circumlunar.space");
+                var pageContent = _browserEngine.RetrieveResponseFromUrl(urlField.Text.ToString() ?? "");
 
                 browserTextArea.Text = pageContent;
             };
