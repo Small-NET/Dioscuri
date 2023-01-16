@@ -10,5 +10,4 @@ Dioscuri is a cross-platform Terminal User Interface (TUI) browser for the [Gemi
 
 ## Features
 
-* Lightweight
 * Cross Platform
