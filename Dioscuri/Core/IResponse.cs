@@ -1,7 +1,8 @@
 ﻿
 namespace Dioscuri.Core
 {
-    // Modeled after https://github.com/InvisibleUp/twinpeaks/tree/master/TwinPeaks/Protocols
+    // Modeled after the Smolnet C# library by LukeEmmet
+    // https://github.com/LukeEmmet/SmolNetSharp
     public interface IResponse
     {
         List<byte> bytes { get; }

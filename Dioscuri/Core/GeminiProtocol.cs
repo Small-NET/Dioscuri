@@ -6,7 +6,7 @@ using System.Text;
 using System.Security.Cryptography.X509Certificates;
 
 
-// originally based on Smolnet C# library by LukeEmmet
+// Originally based on Smolnet C# library by LukeEmmet
 // https://github.com/LukeEmmet/SmolNetSharp
 
 namespace Dioscuri.Core
