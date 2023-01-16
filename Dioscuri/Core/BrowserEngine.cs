@@ -20,7 +20,10 @@ namespace Dioscuri.Core
             }
 
             var uri = new Uri(url);
-            var connectInsecure = false;
+
+            // This needs to be true otherwise an exception is thrown 
+            // Refer to https://github.com/markjamesm/Dioscuri/issues/1
+            var connectInsecure = true;
 
             var geminiResponse = (GeminiResponse)Gemini.Fetch(uri, _certificate, "", connectInsecure);
             var responseArray = geminiResponse.bytes.ToArray();
