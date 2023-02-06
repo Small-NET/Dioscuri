@@ -1,19 +1,23 @@
-﻿using Dioscuri.Core;
+﻿using Autofac;
+using Dioscuri.Core;
 
 namespace Dioscuri
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static IContainer CompositionRoot()
         {
-            var cert = Certificates.CreateX509Certificate2("dioscuri.browser");
+            var builder = new ContainerBuilder();
+            builder.RegisterType<MainApp>();
+            builder.RegisterType<Parser>().As<IParser>();
+            builder.RegisterType<BrowserEngine>().As<IBrowserEngine>();
+            builder.RegisterType<Client>().As<IClient>();
+            return builder.Build();
+        }
 
-            IParser parser = new Parser();
-            IBrowserEngine browserEngine = new BrowserEngine(cert, parser);
-
-            var client = new Client(browserEngine);
-
-            client.StartClient();
+        public static void Main()  //Main entry point
+        {
+            CompositionRoot().Resolve<MainApp>().Run();
         }
     }
 }
