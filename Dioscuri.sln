@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dioscuri", "Dioscuri\Dioscuri.csproj", "{92E27B51-DFB8-404B-860D-F10BE0742417}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DioscuriTests", "DioscuriTests\DioscuriTests.csproj", "{9B29092A-BB19-4168-8E7F-4DCDF8E7FB36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DioscuriTests", "DioscuriTests\DioscuriTests.csproj", "{D3EA53D0-EE25-40F6-AA08-BD2A68446F72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +24,10 @@ Global
 		{92E27B51-DFB8-404B-860D-F10BE0742417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92E27B51-DFB8-404B-860D-F10BE0742417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92E27B51-DFB8-404B-860D-F10BE0742417}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B29092A-BB19-4168-8E7F-4DCDF8E7FB36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B29092A-BB19-4168-8E7F-4DCDF8E7FB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B29092A-BB19-4168-8E7F-4DCDF8E7FB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B29092A-BB19-4168-8E7F-4DCDF8E7FB36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3EA53D0-EE25-40F6-AA08-BD2A68446F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3EA53D0-EE25-40F6-AA08-BD2A68446F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3EA53D0-EE25-40F6-AA08-BD2A68446F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3EA53D0-EE25-40F6-AA08-BD2A68446F72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
