@@ -3,7 +3,7 @@ using Terminal.Gui;
 
 namespace Dioscuri
 {
-    public class Client
+    public class Client : IClient
     {
         private readonly IBrowserEngine _browserEngine;
 
@@ -12,7 +12,7 @@ namespace Dioscuri
             _browserEngine = browserEngine;
         }
 
-        public void StartClient()
+        public void Start()
         {
             Application.Init();
             Colors.Base.Normal = Application.Driver.MakeAttribute (Color.Green, Color.Black);

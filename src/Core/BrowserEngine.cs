@@ -7,9 +7,9 @@ namespace Dioscuri.Core
         private readonly X509Certificate2 _certificate;
         private readonly IParser _parser;
 
-        public BrowserEngine(X509Certificate2 certificate, IParser parser)
+        public BrowserEngine(IParser parser)
         {
-            _certificate = certificate;
+            _certificate = Certificates.CreateX509Certificate2("dioscuri.browser");
             _parser = parser;
         }
 
@@ -27,7 +27,7 @@ namespace Dioscuri.Core
 
         private string HandleDownload(Uri uri)
         {
-            // This needs to be true otherwise an exception is thrown 
+            // This needs to be true otherwise an exception is thrown on Mac
             // Refer to https://github.com/markjamesm/Dioscuri/issues/1
             var connectInsecure = true;
 
