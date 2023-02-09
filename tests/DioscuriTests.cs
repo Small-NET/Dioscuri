@@ -11,7 +11,7 @@ namespace DioscuriTests
             // Arrange
             var certificate = Certificates.CreateX509Certificate2("Test");
             var parser = new Parser();
-            var browserEngine = new BrowserEngine(certificate, parser);
+            var browserEngine = new BrowserEngine(parser);
 
             // Act
             var response = browserEngine.DownloadContent(string.Empty);
