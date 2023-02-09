@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dioscuri\Dioscuri.csproj" />
+    <ProjectReference Include="..\src\Dioscuri.csproj" />
   </ItemGroup>
 
 </Project>
